@@ -10,7 +10,7 @@ The act of reducing complexity in a computer program. It hides the complexity of
 
 A simple example would be to separate and move some complex logic into a function. The function name would be the interface (API) to the logic.
 
-## API (application protocol interface)
+## API (application programming interface)
 
 An interface which allows communication to and from a system.
 
@@ -111,6 +111,29 @@ If no `return` statement is included in a function, that function will by defaul
 Functions usually have a name (this is known as the reference or identifier to the function).
 
 Functions without a name are called _anonymous functions_.
+
+## Hoisting
+
+" the act of raising or lifting something "
+
+No matter where they are declared, variable and function declarations are put into memory during the compile phase, meaning they can be referenced before they are declared. For example:
+
+```
+catName("Chloe");
+
+function catName(name) {
+  console.log("My cat's name is " + name);
+}
+```
+
+In the above code, we can reference the function `catName` before it is declared because the compiler "hoists" or places the function `catName` into memory at compilation time.
+
+```
+console.log(a);
+const a = 200;
+```
+
+In the above code, we get an error, because we initialise the variable `a` after we try to reference it.
 
 ## Instance (noun)
 
