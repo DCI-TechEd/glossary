@@ -49,6 +49,49 @@ When we create a variable, we must assign it a value.
 
 In the above example, we are assigning the value `23` to the variable "age".
 
+## Asynchronous
+
+In JavaScript, the word asynchronous refers to operations (code) which is executed alongside other code. This is also known as non-blocking code, as execution of the asynchronous code does not prevent execution of other code.
+
+This is opposite to synchronous code, which is executed sequentially (one after the other).
+
+##### Examples of asynchronous code
+
+Promises
+
+```
+new Promise((resolve) => {
+  resolve();
+});
+```
+
+Timeouts
+
+```
+setTimeout(() => {
+  console.log('ding');
+}, 200)
+```
+
+Intervals
+
+```
+setInterval(() => {
+  console.log('ding');
+}, 200)
+```
+
+async functions
+
+```
+async function asyncCall() {
+  console.log('calling');
+  const result = await resolveAfter2Seconds();
+  console.log(result);
+  // expected output: "resolved"
+}
+```
+
 ## Boolean
 
 A datatype which can only have the values `true` or `false`.
