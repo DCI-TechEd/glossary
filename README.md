@@ -112,7 +112,7 @@ In object-oriented programming, a class defines an object's characteristics. Cla
 
 A closure is an inner function which has access to its outer environment while at the same time, maintaining its own private environment.
 
-## Default
+## Default (as in default behaviour)
 
 The standard behaviour which will happen in a system, if no other behaviour is present to override it.
 
