@@ -104,7 +104,7 @@ A callback is any executable code that is passed as an argument to other code.
 
 A callback is a function that is to be executed after another function (normally asynchronous) has finished executing — hence the name ‘call back’.
 
-## Class
+## Class (JavaScript)
 
 In object-oriented programming, a class defines an object's characteristics. Class is a template definition of an object's properties and methods, the "blueprint" from which other more specific instances of the object are drawn.
 
